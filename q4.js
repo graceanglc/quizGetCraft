@@ -1,3 +1,4 @@
+/*Array awal*/
 var arr = [
   {
     name: 'Clark Kent',

@@ -20,6 +20,7 @@ function stool(condition) {
 	}
 }
 
+/*Test case menggunakan condition = stool*/
 var condition = "stool";
 
 if(foo(condition)) {

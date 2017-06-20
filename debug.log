@@ -5,3 +5,5 @@
 [0619/215409.640:ERROR:crash_report_database_win.cc(426)] unexpected header
 [0620/231853.819:ERROR:settings.cc(266)] Settings version is not 1
 [0620/231853.820:ERROR:crash_report_database_win.cc(426)] unexpected header
+[0620/232529.056:ERROR:settings.cc(266)] Settings version is not 1
+[0620/232529.058:ERROR:crash_report_database_win.cc(426)] unexpected header
