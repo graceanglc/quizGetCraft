@@ -1,49 +1,20 @@
-class OnlyOne {
-	class OnlyOne2{
-		constructor(arg) {
-		this.arg = arg;
+var OnlyOne = (function() {
+	var instance;
+	function createInstance(args) {
+		var val = new Object(args);
+		return val.toString();
 	}
-		toStringMethod() {
-			return this.arg.toString();
+
+	return {
+		getInstance: function(args) {
+			if(!instance) {
+				instance = createInstance(args);
+			}
+			console.log(instance.toString());
 		}
-	}
-	var instance = false;
-	constructor(arg) {
-		if(!OnlyOne.instance) {
-			OnlyOne.instance = OnlyOne.OnlyOne2(args);
-		}else {
-			OnlyOne.instance.arg = arg;
-		}
-	}
-	getattr(name) {
-		return getattr(this.instance, name);
-	}
-	
+	};
+})();
 
-}
-
-var OnlyOne1 = new OnlyOne("sausage");
-console.log(OnlyOne1);
-console.log(OnlyOne1.instance);
-console.log();
-
-
-var OnlyOne2 = new OnlyOne("eggs");
-console.log(OnlyOne2);
-console.log(OnlyOne2.instance);
-console.log();
-
-var OnlyOne3 = new OnlyOne("spam");
-console.log(OnlyOne3);
-console.log(OnlyOne3.instance);
-console.log();
-
-console.log("Kembali melihat object x");
-console.log(OnlyOne1);
-console.log(OnlyOne1.instance);
-console.log();
-
-console.log("Kembali melihat object y");
-console.log(OnlyOne2);
-console.log(OnlyOne2.instance);
-console.log();
+var test1 = OnlyOne.getInstance("sausage");
+var test2 = OnlyOne.getInstance("eggs");
+alert("Same instance? " + (test1 === test2)); 
