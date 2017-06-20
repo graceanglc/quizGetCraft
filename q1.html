@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans" rel="stylesheet">
+<style>
+	.speech-bubble {
+		border-radius: 5px;
+		position: relative;
+	    background-color: #292929;
+	    width: 50%;
+	 	height: 100%;
+	 	color: white;
+	 	font-family: 'Alegreya Sans', sans-serif;
+	 	text-align: center;
+	 	background-color: #3A4750;
+	}
+
+	.speech-bubble:after {
+		content: '';
+		position: absolute;
+		width: 0;
+		height: 0;
+		border: 15px solid;
+	}
+
+	.speech-bubble-bottom:after {
+	  border-top-color: #3A4750;
+	  top: 100%;
+	  left:80%;  
+	}
+
+	p {
+		padding-top: 3%;
+		font-family: 'Alegreya Sans', sans-serif;
+		font-size: 15px;
+	}
+
+	#progress-bar {
+		width: 50%;
+		margin-top: 30px;
+		background-color: white;
+	}
+
+	#myBar {
+		width: 75%;
+		height: 30px;
+		background-color: #FF6A38;
+	}
+
+	.groove {
+		border-style: groove;
+	}
+
+	.content {
+		width: 50%;
+		border-style: groove;
+		height: 280px;
+	}
+
+	.main-content {
+		width: 250px;
+		margin: 0 auto;
+		text-align: left;
+		padding: 1em 0 1em 0;
+	}
+
+	.btn {
+		width: 50%;
+		padding-top: 20px;
+		text-align: center;
+		font-size: 25px;
+	}
+
+	.inline-1 {
+		display: inline-block;
+		border-style: groove;
+		border-radius: 5px;
+		width: 40%;
+		font-size: 25px;
+	}
+
+	#money {
+		float: left;
+		height: 30px;
+		padding-top: 0;
+		padding-bottom: 15px;
+	}
+
+	#give-btn {
+		position: relative;
+		background-color: #A2EF44;
+		text-align: center;
+		font-size: 15px;
+		float: right;
+		height: 30px;
+		font-family: 'Alegreya Sans', sans-serif;
+		padding-top: 15px;
+	}
+
+	.inline-2 {
+		text-align: top;
+		display: inline-block;
+		border-style: groove;
+		border-radius: 5px;
+		width: 45%;
+		background-color: #D1E4D1;
+	}
+
+	#save {
+		float: left;
+		height: 40px;
+	}
+
+	#share {
+		float: right;
+		height: 40px;
+	}
+
+</style>
+</head>
+<body>
+	<div class="row">
+		<div class="speech-bubble speech-bubble-bottom">
+			<p><b>$167</b> still needed for this project</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="row">
+			<div id="progress-bar" class="groove">
+				<div id="myBar"></div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="content">
+			<div class="main-content">
+				<p><b style="color: #FF6A38;">Only 3 days left </b>to fund this project.</p>
+				</br>			
+				<p>Join the <b>42 </b>other donors who have already supported this project. Every dollars helps.</p>
+				<div class="inline-1" id="money">
+					<p style="position: relative; bottom: 15px; font-size: 20px;">$ <b>50</b></p>
+				</div>
+				<div class="inline-1" id="give-btn">
+					<b style="position: relative; bottom: 3px;">Give Now</b>
+				</div>
+				<div>
+					<div><p style="color: blue; float: left;">Why give $50?</p></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="btn">
+		<div class="inline-2" id="save">
+			<p style="position: relative; bottom: 10px;">Save for later</p>
+		</div>
+		<div class="inline-2" id="share">
+			<p style="position: relative; bottom: 10px;">Tell your friends</p>
+		</div>
+	</div>
+</body>
+
